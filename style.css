@@ -1,0 +1,43 @@
+@font-face {
+ font-family:harabara;
+ src: url(fonts/harabara.ttf);
+ }
+body {
+	background-color: #7dc0fa;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#ffffff;
+	} 
+h1 {
+	font-size:60px;
+	font-family:harabara;
+	}
+#container {
+	height: auto;
+	width: 500px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+li {
+	text-align:left;
+	font-size:20px;
+	margin-top:5px;
+	margin-bottom:0px;
+	}
+input {
+	border: 2px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+	border-radius:8px;
+	font-size:27px;
+	}
