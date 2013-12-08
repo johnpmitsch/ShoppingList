@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>OMG! Shopping!!!!!</title>
+		<title>Shopping List</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
 	</head>
 	<body>
 		<div id=container>
 			<h1>Shopping List</h1>
-			<input type=text></input>
 			<form>
-				<li>Fishing hooks</li>
-				<li>Worms</li>
-				<li>Beer</li>
+				<input type=text id=item></input>
+				<input type=button value=add class=button></input>
 			</form>
+			<ul id=list>
+				<div class=listclass id=original>
+					<li class=statement>Add items above</li>
+				</div>
+				<div id=entry class=hidden>
+					<input type="checkbox" id="checkbox-2-1" class="regular-checkbox big-checkbox" />
+					<li id=listitem>hidden</li>
+				</div>
+				<div id=footer>
+					<input type=button value="remove checked items" id=remove class=button></input>
+				</div>
+			</ul>
 		</div>	
 	</body>
 </html>
