@@ -17,11 +17,11 @@ $(document).ready(function() {
 		}
 	}
 	//remove item from list
-	$('li').dblclick(function() {
+	$('#entry').dblclick(function() {
 		(this).remove();
 		});
 	//submit item by clicking add
-	$('.button').click(function() {
+	$('#add').click(function() {
 		shop();
 		});
 	//press enter to submit
@@ -31,8 +31,9 @@ $(document).ready(function() {
 			shop();
 			}
 		});
-	});
-	//cross out item from list
-	$('li').onClick(function() {
-		alert("hi");
+	//remove items from list
+	$('#remove').click(function() {
+			//$("input:checked").remove();
+			$("input:checked").parent().remove();
 		});
+	});
